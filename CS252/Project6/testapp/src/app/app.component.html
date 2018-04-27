@@ -1,0 +1,37 @@
+<div class = "outer">
+  <h1 class = "title">
+        STONE FIGHTS
+  </h1>
+  <div>
+    <table>
+      <tr>
+        <td colspan="7">
+          <i>
+            {{message}}
+          </i>
+        </td>
+        <td colspan="3">
+            <i>
+              Your ID is: {{id}}
+            </i>
+          </td>
+      </tr>
+      <tr *ngFor="let r of board; let i = index">
+        <td class = "col" *ngFor="let c of r; let j = index" (click) = "placeAt(i, j)">
+
+          <img *ngIf="c.value === 1" src="assets/img/w1.png">
+          <img *ngIf="c.value === 2" src="assets/img/b.png">
+
+        </td>
+      </tr>
+      <tr>
+        <td colspan="10">
+          <i>
+            Remain Step:{{remainTurn}}
+          </i>
+        </td>
+        
+      </tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+.outer{
+    padding: 100px;
+}
+
+.col{
+    border: 1px solid darkgray;
+    cursor: pointer;
+    user-select: none;
+    width: 2em;
+    height: 2em;
+    padding: 0px;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.col:hover{
+    background-color: lightgray;
+    transition: background 0.2s ease-in-out;
+}
+
+.title{
+    text-align: center;
+    user-select: none;
+}
+
+table{
+    margin-left: auto;
+    margin-right:  auto;
+    
+}
+
+i{
+    font-size: 1em;
+    border: none;
+    user-select: none;
+}
